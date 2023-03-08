@@ -11,8 +11,9 @@ import NurseList from './containers/nurses/list-nurse';
 import EditNurse from './containers/nurses/edit-nurse';
 import BookReservation from './containers/reservation/book-reservation';
 import ReservationList from './containers/reservation/reservation-list';
+import { createRequire } from 'module';
 
-
+const require = createRequire(import.meta.url);
 
 function App() {
   return (
@@ -37,3 +38,4 @@ function App() {
 }
 
 export default App;
+
